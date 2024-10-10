@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+
+</head>
+
+<body>
+    <header>
+
+
+        <nav class="navbar">
+
+            <ul class="nav_links">
+                <li> <a href="#" class="logo"><i class="fas fa-home  "></i><span class="logoF">&nbsp; Logo</span> </a>
+                </li>
+                <li><a href="#"><i class="fas fa-globe-africa  "></i></a></li>
+                <li><a href="#"><i class="fa fa-user "></i></a></li>
+                <li><a href="#"><i class="fas fa-envelope  "></i></a></li>
+                <li><a href="#" class="dropdown"><i class="fa fa-bell  "></i></a>
+                    <ul>
+                        <li><a href="#" class="dropdown-item">One new friend request</a></li>
+                        <li><a href="#" class="dropdown-item">Ahmed posted on your profile</i></a></li>
+                        <li><a href="#" class="dropdown-item">Mohamed likes your post</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+
+
+        </nav>
+        <a href="" class="user_pic_link"><img class="user_pic" onclick="onClick(this)" 
+                src="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/img_avatar2.png"
+                alt="user picture"></a>
+    </header>
+    <div class="wrapper">
+        <!-- profile content-->
+        <div class="profile">
+            <div class="card">
+                <div class="profile-header">
+                    <p class="profile_p"> My Profile </p>
+                    <img class="profile_img" onclick="onClick(this)"  src="https://www.w3schools.com/howto/img_avatar.png" alt="avatar">
+
+                </div>
+                <hr>
+                <div class="container">
+                    <p><i class="fas fa-pen  "></i>&nbsp; &nbsp; Designer, UI </p>
+                    <p><i class="fas fa-home  "></i>&nbsp; &nbsp;London, UK</p>
+                    <p><i class="fas fa-birthday-cake "></i>&nbsp; &nbsp; April 1, 1988 </p>
+
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="accordion_btn"><i class="fas fa-circle-notch"></i> &nbsp;&nbsp; My Groups
+
+                </button>
+                <div class="panel">
+                    <p>Some text..</p>
+                </div>
+                <button class="accordion_btn"><i class="fas fa-calendar-check"></i>&nbsp;&nbsp; My Events
+
+                </button>
+                <div class="panel">
+                    <p>Some other text..</p>
+                </div>
+                <button class="accordion_btn" "><i class=" fas fa-users"></i>&nbsp;&nbsp; My Photos
+
+                </button>
+                <div class="panel" id="panel_imges">
+
+                    <img onclick="onClick(this)"  src="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/img_lights.jpg"
+                        alt="img_lights">
+                    <img onclick="onClick(this)"  src="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/img_nature.jpg"
+                        alt="img_nature">
+                    <img onclick="onClick(this)"  src="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/img_mountains.jpg"
+                        alt="img_mountains">
+                    <img onclick="onClick(this)"  src="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/img_forest.jpg"
+                        alt="img_forest">
+                    <img onclick="onClick(this)"  src="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/img_nature.jpg"
+                        alt="img_nature">
+                    <img onclick="onClick(this)"  src="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/img_fjords.jpg"
+                        alt="img_fjords">
+
+
+                </div>
+            </div>
+            <div class="interests">
+
+                <p>Interests</p>
+                <span class="span_1">News</span>
+                <span class="span_1">W3Schools</span>
+                <span class="span_2">Labels</span>
+                <span class="span_3">Games</span>
+                <span class="span_4">Friends</span>
+                <span class="span_5">Games</span>
+                <span class="span_6">Friends</span>
+                <span class="span_7">Food</span>
+                <span class="span_8">Design</span>
+                <span class="span_9">Art</span>
+                <span class="span_10">Photos</span>
+
+            </div>
+            <div class="alert">
+                <i class="fas fa-times" onclick="this.parentElement.style.display='none'"></i>
+                <strong>Hey!</strong>
+                <p>People are looking at your profile. Find out who.</p>
+
+
+            </div>
+
+
+        </div>
+
+        <!-- posts content-->
+        <div class="posts">
+            <div class="status">
+                <form>
+                    <label for="input-status">Social Media template by Zeiad Haggag</label><br>
+                    <input type="text" name="input-status" value="Status: Feeling Blue"><br>
+                    <button><i class="fas fa-pen  "></i>&nbsp;&nbsp;Post</button>
+                </form>
+            </div>
+            <div class="status_card">
+                <div class="card_header">
+                    <div class="card_img">
+                        <img onclick="onClick(this)"  src="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/img_avatar2.png"
+                            alt="profile_photo">
+                        <span>&nbsp;&nbsp; John Doe</span>
+                    </div>
+                    <div class="card_time">
+                        <span>1 min</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="status_content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex  commodo consequat.</p>
+                        <div class="status_imgs">
+                            <img onclick="onClick(this)"  src="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/img_lights.jpg" alt="status_photo">
+                            <img onclick="onClick(this)"  src="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/img_nature.jpg" alt="status_photo">
+                        </div>
+                </div>
+                <div class="status_buttons">
+                    <button ><i class="fas fa-thumbs-up "></i>&nbsp;&nbsp;Like</button>
+                    <button ><i class="fas fa-comment  "></i>&nbsp;&nbsp;Comment</button>
+                </div>
+            </div>
+
+            <div class="status_card">
+                <div class="card_header">
+                    <div class="card_img">
+                        <img onclick="onClick(this)"  src="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/img_avatar2.png"
+                            alt="profile_photo">
+                        <span>&nbsp;&nbsp; John Doe</span>
+                    </div>
+                    <div class="card_time">
+                        <span>16 min</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="status_content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              
+                </div>
+                <div class="status_buttons">
+                    <button ><i class="fas fa-thumbs-up "></i>&nbsp;&nbsp;Like</button>
+                    <button ><i class="fas fa-comment  "></i>&nbsp;&nbsp;Comment</button>
+                </div>
+            </div>
+
+            <div class="status_card">
+                <div class="card_header">
+                    <div class="card_img">
+                        <img onclick="onClick(this)"  src="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/img_avatar6.png"
+                            alt="profile_photo">
+                        <span>&nbsp;&nbsp; Angie Jane</span>
+                    </div>
+                    <div class="card_time">
+                        <span>32 min</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="status_content">
+                    <p>Have you seen this?</p>
+                        <div class="status_imgs">
+                            <img id="img_3" onclick="onClick(this)"  src="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/img_nature.jpg" alt="status_photo">
+                            </div>
+                            <p id="p_img">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                  ea commodo consequat.</p>
+                </div>
+                <div class="status_buttons">
+                    <button ><i class="fas fa-thumbs-up "></i>&nbsp;&nbsp;Like</button>
+                    <button ><i class="fas fa-comment  "></i>&nbsp;&nbsp;Comment</button>
+                </div>
+            </div>
+        </div>
+        <!-- event content-->
+        <div class="events">
+            <div class="card_1">
+                <p>
+                    Upcoming Events:
+                </p>
+                <img onclick="onClick(this)"  src="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/img_forest.jpg"
+                 alt="nuture_view">
+                 <p><strong>Holiday</strong></p>
+                 <p id="p_2">Friday 15:00</p>
+                 <button> Info</button>
+
+
+            </div>
+            <div class="card_2">
+                <p> Friend Request</p>
+                <img onclick="onClick(this)"  src="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/img_avatar6.png" 
+                alt="vector-photo">
+                <p> Jane Doe</p>
+                <div class="card_2_buttons">
+                    <button class="btn_1" ><i class="fas fa-check" ></i></button>
+                    <button class="btn_2" ><i class="fas fa-times"></i></button>
+                </div>
+
+
+
+
+            </div>
+            <div class="ads">
+                <p>ADS</p>
+            </div>
+            <div class="bug">
+
+                <i class="fas fa-bug"></i>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+        <!-- model image-->
+        <div id="myModel" class="model">
+        <span class="close">&times;</span>
+        <img  class="model_content" id="img01">
+    </div>
+
+
+
+
+
+    </div>
+    <footer>
+        <div class="div_1">
+            <p>Footer </p>
+        </div>
+        <div class="div_2">
+            <p>powered by zeiad haggag</p>
+        </div>
+    </footer>
+        <!-- model image-->
+        <div id="myModel" class="model">
+            <span class="close">&times;</span>
+            <img  class="model_content" id="img01">
+        </div>
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>
