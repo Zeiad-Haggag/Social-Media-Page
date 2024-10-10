@@ -21,6 +21,11 @@ This is a front-end-only implementation of a social media website that resembles
 2. Open `index.html` in any browser to view the website.
 3. This is a static front-end project, so there is no back-end functionality.
 
+## Demo
+
+Check out the live demo [here](https://zeiad-haggag.github.io/Social-Media-Page/).
+
+
 ## Screenshot
 
 ![Screenshot of the website](./assests/social%20media%20website.png)
